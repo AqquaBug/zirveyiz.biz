@@ -1,0 +1,10 @@
+		<ul>
+		<li ng-repeat="mainCat in categories">
+			<a>{{mainCat.name}}</a>
+			<ul>
+			<li ng-repeat="subCat in mainCat.subCategories">
+				<a>{{subCat.name}}</a>
+			</li>
+			</ul>
+		</li>
+		</ul>
