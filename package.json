@@ -1,0 +1,15 @@
+ {
+  "name": "zirveApp",
+  "version": "0.0.1",
+  "description": "Zirve Gida Tarim Hay. San. Tic. A.S. main Web Site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/planetoftheweb/angulardata.git"
+  },
+  "author": "Orcun Kavusturan",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-util": "^2.2.20",
+    "gulp-webserver": "^0.8.1"
+  }
+}

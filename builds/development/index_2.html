@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html ng-app=zirveApp>
+<head>
+	<title>Zirveyiz Biz Demo</title>
+	<script type="text/javascript" src="lib/angular/angular.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Open+Sans' rel='stylesheet' type='text/css'>	<style type="text/css">
+
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Desktop styles */
+@media only screen and (min-width:769px){
+	/* All browsers have default font size is 16px, so now we fix this to 1em */
+	ul,li,a{
+		padding:0px;
+	}
+	body{ 
+		font-size: 1em;
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		
+		text-align: center;
+		color: #444;
+		background: rgb(231,231,231);
+		padding: 0;
+		margin: 0;
+		background-image: url('http://centum.purethe.me/wp-content/themes/Centum/images/bg/noise.png');
+	 	background-repeat: repeat;
+	  	background-position: top left;
+	  	background-attachment: fixed;		
+	}
+	#logo{
+		float:left;
+		margin-left:50px;
+	}
+	/* IE has a problem with expression above, so we hack it by expression below */
+	html{ font-size:100%; }
+	
+
+	#wrapper{
+	  background: #fff;
+	  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+	  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+	  width: 960px;
+	  padding: 10px 35px 35px 35px;
+	  margin: 0 auto 0 auto;
+	}
+	
+	nav ul{
+
+
+		line-height: 40pt;
+		margin: 0 auto;
+		margin-top:10px;
+		list-style-type: none;
+		background-color: rgb(51,51,51);
+		color: #fff;
+		float:left;
+		width:100%;
+		padding: 0px;
+		text-align: center;
+		font-size:.75em;
+		border: 0px solid blue;
+	}
+
+
+	nav ul li { 
+		display: inline-block;
+		border: 0px solid red;
+		padding:18px 22px;
+		float:left;
+		padding:0px;
+		margin:0px;
+	}
+
+	nav ul li a{
+	  margin: 0px;
+		padding: 0px 22px;
+	  border-right: 1px solid #484848;	
+
+	}
+	nav ul li:hover {
+		cursor:pointer;
+		cursor:hand;
+		margin:0px;
+		background-color: rgb(133,177,53);
+
+	}
+
+
+	nav ul li > ul {
+		display:none;
+	}
+	.clear{
+		clear:both;
+	}
+
+
+	
+
+
+
+}
+	</style>
+</head>
+<body>
+<div id="wrapper">
+	<header>
+		<div id="logo"><img src="images/zirve-logo_98-x-110.png"/></div>
+		<!--<input type="text" ng-model="name">
+		<p>{{name}}</p>-->
+	</header>
+	<nav ng-controller = "MyController">
+		<ul>
+		<li ng-repeat="mainCat in categories">
+			<a>{{mainCat.name}}</a>
+			<ul>
+			<li ng-repeat="subCat in mainCat.subCategories">
+				<a>{{subCat.name | uppercase}}</a>
+			</li>
+			</ul>
+		</li>
+		</ul>
+	</nav>
+	<ul class="artist clear"></ul>
+</div>
+</body>
+</html>
+
