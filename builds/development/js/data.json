@@ -5,12 +5,12 @@
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod." 
   },
   {
-   "name"           : "Yemler",
+   "name"           : "Yemleri",
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
    "catId"          : "1",
    "parentCatId"    : "0",
    "image"          : "null.jpg",
-   "url"            : "/",
+   "url"            : "/yemler.asp",
    "subCategories"  : 
         [
           {
@@ -19,7 +19,7 @@
            "catId"          : "1",
            "parentCatId"    : "1",
            "image"          : "null.jpg",
-           "url"            : "/"
+           "url"            : "/yemler_1.asp"
           },        
           {
            "name"           : "Konsantre Yemler",

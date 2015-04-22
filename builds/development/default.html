@@ -12,6 +12,9 @@
 	<h1>{{author.name}}</h1>
 	<p>{{author.title + ', ' + author.company }}</p>
 </div>
-
+		<div ng-controller="ProductController">
+		  <button ng-click="changeLanguage('tr')" translate="BUTTON_TEXT_DE"></button>
+		  <button ng-click="changeLanguage('en')" translate="BUTTON_TEXT_EN"></button>
+		</div>
 </body>
 </html>
