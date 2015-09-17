@@ -36,22 +36,25 @@ zirveApp.config(function($translateProvider) {
 
 $translateProvider.useStaticFilesLoader({
     files: [{
-        prefix: '/i18n/nav/',
+        prefix: 'i18n/nav/',
         suffix: '.json'
     }, {
-        prefix: '/i18n/nav/',
+        prefix: 'i18n/nav/',
         suffix: '.json'
     }, {
-        prefix: '/i18n/nav/',
+        prefix: 'i18n/nav/',
         suffix: '.json'
     }]
-});	
+});
+
+$translateProvider.preferredLanguage('en');
+
+//$translateProvider.useLoader('$translatePartialLoader', {
+//  urlTemplate: '/i18n/{part}/{lang}.json'
+//});
 
 
 });
 
-$translateProvider.determinePreferredLanguage(function () {
-  // define a function to determine the language
-  // and return a language key
-});
+
 

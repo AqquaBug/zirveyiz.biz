@@ -1,11 +1,11 @@
 
 [
  {
-   "name"           : "Ana Sayfa",
+   "name"           : "Main Page",
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod." 
   },
   {
-   "name"           : "Yemleri",
+   "name"           : "Feed",
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
    "catId"          : "1",
    "parentCatId"    : "0",
@@ -14,7 +14,7 @@
    "subCategories"  : 
         [
           {
-           "name"           : "Standard Yemler",
+           "name"           : "Standard Feeds",
            "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"          : "1",
            "parentCatId"    : "1",
@@ -22,7 +22,7 @@
            "url"            : "/yemler_1.asp"
           },        
           {
-           "name"           : "Konsantre Yemler",
+           "name"           : "Consantrated Feeds",
            "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"          : "2",
            "parentCatId"    : "1",
@@ -30,7 +30,7 @@
            "url"            : "/"
           },
           {
-           "name"           : "Premiksler",
+           "name"           : "Premixs",
            "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"          : "3",
            "parentCatId"    : "1",
@@ -40,7 +40,7 @@
         ]
   },
   {
-   "name"          : "By-Pass Yaglar",
+   "name"          : "By-Pass Fats",
    "desc"          : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
    "catId"         : "2",
    "parentCatId"   : "0",
@@ -48,20 +48,20 @@
    "url"           : "/"
   },
   {
-   "name"          : "Mamalar",
+   "name"          : "Milk replacers",
    "desc"          : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
    "catId"         : "3",
    "parentCatId"   : "0",
    "subCategories" : 
         [
           {
-           "name"         : "Buzağı Mamaları",
+           "name"         : "Calf milk replacers",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "1",
            "parentCatId"  : "3"
           },
           {
-           "name"         : "Kuzu Mamaları",
+           "name"         : "Lamb milk replacers",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "2",
            "parentCatId"  : "3"
@@ -69,20 +69,20 @@
         ]   
   },
   {
-   "name"           : "Sistemler",
+   "name"           : "Systems",
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
    "catId"          : "6",
    "parentCatId"    : "0",
    "subCategories"  : 
         [
           {
-           "name"         : "Süt Sagım Sistemleri",
+           "name"         : "Milking Systems",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "1",
            "parentCatId"  : "6"
           },
           {
-           "name"         : "Süt Soğutma Sistemleri",
+           "name"         : "Milk Cooling Systems",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "2",
            "parentCatId"  : "6"
@@ -90,26 +90,26 @@
         ]    
   },
   {
-   "name"           : "Çiftlik Ekipmanları",
+   "name"           : "Farm Equipments",
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
    "catId"          : "5",
    "parentCatId"    : "0",
    "subCategories"  : 
         [
           {
-           "name"         : "Fiber Glass Yem Siloları",
+           "name"         : "Fiber glass feed silage",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "1",
            "parentCatId"  : "5"
           },
           {
-           "name"         : "Yem Karıştırma Vagonları",
+           "name"         : "Mixing vagons",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "2",
            "parentCatId"  : "5"
           },
           {
-           "name"         : "Çiftlik Malzemeleri",
+           "name"         : "Farm products",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "3",
            "parentCatId"  : "5"
@@ -117,32 +117,32 @@
         ]    
   },
   {
-   "name"           : "Özel Ürünler",
+   "name"           : "Special Products",
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
    "catId"          : "4",
    "parentCatId"    : "0",
    "subCategories"  : 
         [
           {
-           "name"         : "Meme Sağlığı ve Hijyen Ürünleri",
+           "name"         : "Udder care and hygiene products",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "1",
            "parentCatId"  : "4"
           },
           {
-           "name"         : "Silaj Katkıları",
+           "name"         : "Silage additives",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "2",
            "parentCatId"  : "4"
           },
           {
-           "name"         : "Ayak ve Tırnak Sağlığı ürünleri",
+           "name"         : "Hoof care products",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "3",
            "parentCatId"  : "4"
           },
           {
-           "name"         : "Destek Ürünler",
+           "name"         : "Support products",
            "desc"         : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
            "catId"        : "4",
            "parentCatId"  : "4"
@@ -154,7 +154,7 @@
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod." 
   },
   {
-   "name"           : "İletişim",
+   "name"           : "Contact",
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod." 
   }
 ]

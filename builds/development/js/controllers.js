@@ -23,9 +23,8 @@ zirveController.controller('ProductController', ['$scope', '$http','$routeParams
 zirveController.controller('TranslateController', ['$translate', '$scope', '$http','$routeParams', function($translate, $scope, $http, $routeParams) {
 
     $scope.changeLanguage = function (langKey) {
-
-    $translate.use(langKey);
-  };
+     $translate.use(langKey);
+    };
   
 }]);
 

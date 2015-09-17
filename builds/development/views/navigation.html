@@ -1,10 +1,10 @@
 		<ul>
 		<li ng-repeat="mainCat in categories">
-			<a>{{mainCat.name}}</a>
+			<a>{{ mainCat.name | translate }}</a>
 			
 			<ul>
 			<li ng-repeat="subCat in mainCat.subCategories">
-				<a>{{subCat.name}}</a>
+				<a>{{ subCat.name | translate }}</a>
 
 			</li>
 			</ul>

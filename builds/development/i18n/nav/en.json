@@ -1,0 +1,28 @@
+{
+    /*  Main Navigation */
+    "HEADLINE": "Hello there, This is my awesome app!",
+    "INTRO_TEXT": "And it has i18n support",
+    "Feed": "Feed",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+    "Main Page":"Main Page",
+    "By-Pass Fats":"By-Pass Fats",
+    "Systems":"Systems",
+    "Farm Equipments":"Farm Equipments",
+    "Special Products":"Special Products",
+    "Contact":"Contact",
+    /*  Sub Categories  */
+    "Standard feeds" : "Standard Feeds",
+    "Consantrated feeds":"Consantrated Feeds",
+    "Premixs":"Premixs",
+    "By-Pass Fats":"By-Pass fats",
+    "Milk replacers":"Milk replacers",
+    "Calf milk Replacers":"Calf Milk Replacers",
+    "Lamb milk replacers":"Lamb milk replacers",
+    "Fiber glass feed silage":"Fiber glass feed silage",
+    "Mixing vagons":"Mixing vagons",
+    "Farm products":"Farm products",
+    "Udder care and hygiene products":"Udder care and hygiene products",
+    "Silage additives":"Silage additives",
+    "Hoof care products":"Hoof care products",
+    "Support products":"Support products"
+}
