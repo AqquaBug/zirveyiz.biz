@@ -8,7 +8,13 @@ var zirveApp	=	angular.module('zirveApp',[
 
 zirveApp.config(['$routeProvider', function($routeProvider){
 
+
+
 $routeProvider.
+when('/', {
+    templateUrl : 'views/default_page.html',
+    controller : 'defaultPageController'
+}).
 when('/list', {
 	templateUrl : 'views/list.html',
 	controller : 'ListController'
@@ -21,11 +27,7 @@ when('/product/:itemId',{
 	templateUrl : 'views/product.html',
 	controller : 'ProductController'
 }).
-when('/navigation',{
-	templateUrl : 'views/navigation.html',
-	controller : 'NavigationController'
-}).
-otherwise({redirectTo: '/navigation'});
+otherwise({redirectTo: '/'});
 
 }]);
 

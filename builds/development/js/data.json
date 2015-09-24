@@ -5,7 +5,7 @@
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod." 
   },
   {
-   "name"           : "Feed",
+   "name"           : "Feeds",
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
    "catId"          : "1",
    "parentCatId"    : "0",

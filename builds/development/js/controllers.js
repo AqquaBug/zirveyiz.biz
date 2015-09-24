@@ -6,11 +6,22 @@ zirveController.controller('ListController', ['$scope', '$http', function($scope
   });
 }]);
 
-zirveController.controller('NavigationController', ['$scope', '$http', function($scope, $http) {
+zirveController.controller('defaultPageController', ['$scope', '$http', function($scope, $http) {
   $http.get('js/data.json').success(function(data) {
     $scope.categories = data;
   });
 }]);
+
+zirveController.controller('NavigationController', ['$scope', '$http', function($scope, $http) {
+  $http.get('js/data.json').success(function(data) {
+    $scope.categories = data;
+  });
+}])
+.directive('ngNavigation', function() {
+  return {
+    templateUrl: 'views/navigation.html'
+  };
+});
 
 zirveController.controller('ProductController', ['$scope', '$http','$routeParams', function($scope, $http, $routeParams) {
   $http.get('js/products.json').success(function(data) {

@@ -56,6 +56,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	  margin: 0 auto 0 auto;
 	}
 	
+	#tools {
+		float:right;
+	}
+	#tools ul li a {
+		font-size: 12px;
+		font-weight:400;
+		cursor: pointer;
+	}
 
 	.clear{
 		clear:both;
@@ -124,6 +132,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	}		
 
+	btnTranslate{
+
+		font-size: 11pt;
+	}
 
 }
 	</style>
@@ -134,14 +146,31 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		<div id="logo"><img src="images/zirve-logo_98-x-110.png"/></div>
 		<!--<input type="text" ng-model="name">
 		<p>{{name}}</p>-->
+		<div id="tools">
+			<div ng-controller="TranslateController">
+				<ul>
+				<li>
+				  <a ng-click="changeLanguage('tr')" translate="BTN_TRANSLATE_TEXT_TR"></a>
+				  <a ng-click="changeLanguage('en')" translate="BTN_TRANSLATE_TEXT_ENG"></a>
+				</li>
+				</ul>
+			</div>
+		</div>	
+		
+		<div ng-controller="NavigationController"><div ng-navigation></div>
 	</header>
-	<nav ng-view>
+	
+	<main ng-view></main>
 
-	</nav>
 	<h1>{{name}}</h1>
 	<input ng-model="name" placeholder="Enter your name">
 	<ul class="artist clear"></ul>
 </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
 

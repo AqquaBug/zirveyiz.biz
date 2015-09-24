@@ -1,3 +1,4 @@
+		<nav>
 		<ul>
 		<li ng-repeat="mainCat in categories">
 			<a>{{ mainCat.name | translate }}</a>
@@ -14,7 +15,5 @@
 		<h2>{{ 'HEADLINE' | translate }}</h2>
 		<p>{{ 'INTRO_TEXT' | translate }}</p>
 
-		<div ng-controller="TranslateController">
-		  <button ng-click="changeLanguage('tr')" translate="BUTTON_TEXT_TR"></button>
-		  <button ng-click="changeLanguage('en')" translate="BUTTON_TEXT_EN"></button>
-		</div>
+
+		</nav>
