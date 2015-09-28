@@ -1,131 +1,69 @@
 <!DOCTYPE html>
+
 <html ng-app=zirveApp>
-<head>
-	<title>Zirveyiz Biz Demo</title>
-	<script type="text/javascript" src="lib/angular/angular.js"></script>
-	<script type="text/javascript" src="js/controllers.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Open+Sans' rel='stylesheet' type='text/css'>	<style type="text/css">
-
-
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
-/* Desktop styles */
-@media only screen and (min-width:769px){
-	/* All browsers have default font size is 16px, so now we fix this to 1em */
-	ul,li,a{
-		padding:0px;
-	}
-	body{ 
-		font-size: 1em;
-		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
+	<head>
 		
-		text-align: center;
-		color: #444;
-		background: rgb(231,231,231);
-		padding: 0;
-		margin: 0;
-		background-image: url('http://centum.purethe.me/wp-content/themes/Centum/images/bg/noise.png');
-	 	background-repeat: repeat;
-	  	background-position: top left;
-	  	background-attachment: fixed;		
-	}
-	#logo{
-		float:left;
-		margin-left:50px;
-	}
-	/* IE has a problem with expression above, so we hack it by expression below */
-	html{ font-size:100%; }
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Angular files -->
+		<script type="text/javascript" src="lib/bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="lib/bower_components/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="lib/bower_components/angular-translate/angular-translate.min.js"></script>
+		<script type="text/javascript" src="lib/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+
+		<!-- A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more) -->
+		<script type="text/javascript" src="lib/bower_components/respond/src/respond.js"></script>
+
+
+		<script type="text/javascript" src="js/controllers.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400|Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>	
+
+		<link rel="stylesheet" href="css/default-style-2.css">		
+		
+		<!-- Bootstrap CSS -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.css">	
+		<link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<!--<link href="css/default-style.css" rel="stylesheet">-->
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+	<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
 	
+		
 
-	#wrapper{
-	  background: #fff;
-	  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
-	  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
-	  width: 960px;
-	  padding: 10px 35px 35px 35px;
-	  margin: 0 auto 0 auto;
-	}
+
+			
+			<div ng-controller="NavigationController"><div ng-navigation></div></div>
 	
-	nav ul{
-
-
-		line-height: 40pt;
-		margin: 0 auto;
-		margin-top:10px;
-		list-style-type: none;
-		background-color: rgb(51,51,51);
-		color: #fff;
-		float:left;
-		width:100%;
-		padding: 0px;
-		text-align: center;
-		font-size:.75em;
-		border: 0px solid blue;
-	}
-
-
-	nav ul li { 
-		display: inline-block;
-		border: 0px solid red;
-		padding:18px 22px;
-		float:left;
-		padding:0px;
-		margin:0px;
-	}
-
-	nav ul li a{
-	  margin: 0px;
-		padding: 0px 22px;
-	  border-right: 1px solid #484848;	
-
-	}
-	nav ul li:hover {
-		cursor:pointer;
-		cursor:hand;
-		margin:0px;
-		background-color: rgb(133,177,53);
-
-	}
-
-
-	nav ul li > ul {
-		display:none;
-	}
-	.clear{
-		clear:both;
-	}
-
 
 	
 
-
-
-}
-	</style>
-</head>
-<body>
-<div id="wrapper">
-	<header>
-		<div id="logo"><img src="images/zirve-logo_98-x-110.png"/></div>
-		<!--<input type="text" ng-model="name">
-		<p>{{name}}</p>-->
-	</header>
-	<nav ng-controller = "MyController">
-		<ul>
-		<li ng-repeat="mainCat in categories">
-			<a>{{mainCat.name}}</a>
-			<ul>
-			<li ng-repeat="subCat in mainCat.subCategories">
-				<a>{{subCat.name | uppercase}}</a>
-			</li>
-			</ul>
-		</li>
-		</ul>
-	</nav>
-	<ul class="artist clear"></ul>
-</div>
-</body>
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="lib/bower_components/bootstrap/dist/js/jquery.min.js"><\/script>')</script>
+	
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	
+	</body>
 </html>
 

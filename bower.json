@@ -23,7 +23,8 @@
     "angular-translate-loader-partial": "~2.6.1",
     "angular-translate-loader-url": "~2.6.1",
     "angular-translate-loader-static-files": "~2.6.1",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "respond": "Respond#~1.4.2"
   },
   "devDependencies": {
     "angular-translate-loader-partial": "~2.6.1"

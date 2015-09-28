@@ -1,9 +1,5 @@
 
 [
- {
-   "name"           : "Main Page",
-   "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod." 
-  },
   {
    "name"           : "Feeds",
    "desc"           : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",

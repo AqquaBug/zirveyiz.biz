@@ -1,0 +1,24 @@
+.nav{
+
+	font-size:12px;
+
+}
+
+
+.dropdown:hover .dropdown-menu {
+	cursor: pointer;
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
+ .navbar li a {
+ line-height: 50px;
+}
+
+nav li > a{
+	cursor: pointer;
+}
+
+.navbar{
+	border-radius:0px;
+}
