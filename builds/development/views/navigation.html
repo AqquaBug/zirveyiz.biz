@@ -1,4 +1,4 @@
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example ">
@@ -26,12 +26,12 @@
 					<div class="navbar-btn" ng-controller="TranslateController">
 						<!-- Language options, dropdown menu, Extra small button group -->
 						<div class="btn-group pull-right">
-						  <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    ENG <span class="caret"></span>
+						  <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btnLanguageSwitch">
+						    English <span class="caret"></span>
 						  </button>
 								  <ul class="dropdown-menu xs" aria-labelledby="dropdownMenu1">
-								    <li><a ng-click="changeLanguage('tr')" translate="BTN_TRANSLATE_TEXT_TR" href="#">ENG</a></li>
-								    <li><a ng-click="changeLanguage('en')" translate="BTN_TRANSLATE_TEXT_ENG" href="#">TR</a></li>
+								    <li><a ng-click="changeLanguage('tr')" translate="BTN_TRANSLATE_TEXT_TR" href="#">English</a></li>
+								    <li><a ng-click="changeLanguage('en')" translate="BTN_TRANSLATE_TEXT_ENG" href="#">Türkçe</a></li>
 								  </ul>
 						</div>
 					</div>					
